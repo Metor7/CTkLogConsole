@@ -22,7 +22,7 @@ MyFolder
 Sample code(more examples in ``examples`` folder):
 
 ```python
-import customtkinter # you can also use tkinter
+import customtkinter # you can also use tkinter, but customtkinter is needed!
 from CTkLogConsole import CTkConsole
 
 customtkinter.set_appearance_mode("dark")
