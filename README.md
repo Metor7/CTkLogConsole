@@ -4,13 +4,9 @@
 
 # Screenshots
 
----
-
 ![Zrzut ekranu 2023-06-17 143608](https://github.com/Metor7/CTkLogConsole/assets/78621101/7d0b4c81-8ccd-491e-9e0c-f550fbdd1258)
 
 # Example
-
----
 
 File structure(for the example script):
 
@@ -47,13 +43,9 @@ root.mainloop()
 
 # License
 
----
-
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 # Do to
-
----
 
 * [ ] Optimize the log() function for improved performance and faster script execution.
 * [ ] Fix the bug where the log container does not change its color when the appearance mode is changed. (A temporary workaround is to add an additional log entry to trigger the color update.)
@@ -61,8 +53,6 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 ***If you know how to repair this bugs contact me.***
 
 # Contact
-
----
 
 **Discord** - *metor.* or **Steam** - *https://steamcommunity.com/profiles/76561198972607318/*
 
