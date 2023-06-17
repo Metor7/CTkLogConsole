@@ -45,7 +45,7 @@ root.mainloop()
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-# Do to
+# To fix
 
 * [ ] Optimize the log() function for improved performance and faster script execution.
       It is likely that the poor optimization of the main log() function is caused by generating a separate variable for each log container to store the icon depending on         the log type. Fixing this issue should reduce the time taken to create each log container. By optimizing this aspect, the overall performance of the console can be          improved.
