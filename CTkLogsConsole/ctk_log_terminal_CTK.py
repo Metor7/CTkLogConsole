@@ -139,8 +139,7 @@ class CTkConsole(customtkinter.CTkFrame):
             self.log_container = customtkinter.CTkFrame(self.log_frame, corner_radius=5, fg_color=self.frame_color)
             self.log_container.pack(fill='x', pady=(2, 0), padx=5)
 
-            icon_path = str(self.get_icon_path(log['type']))
-            icon = customtkinter.CTkImage(light_image=Image.open(icon_path), dark_image=Image.open(icon_path), size=(16, 16))
+            icon = self.get_icon(log['type'])
             icon_label = customtkinter.CTkLabel(self.log_container, image=icon, text='')
             icon_label.pack(side='left', padx=(4, 1))
             CTkToolTip(icon_label, message=f'{log["type"]}')
@@ -168,7 +167,20 @@ class CTkConsole(customtkinter.CTkFrame):
         if appearance_mode.lower() == 'light':
             return '#dbdbdb'
 
+    def get_icon(self, log_type):
+        if log_type.lower() == 'info':
+            return self.info_icon
+        elif log_type.lower() == 'warning':
+            return self.warning_icon
+        elif log_type.lower() == 'error':
+            return self.error_icon_icon
+        elif log_type.lower() == 'debug':
+            return self.debug_icon
+        else:
+            return self.deafult_icon_icon
+    
     def get_icon_path(self, log_type):
+        # OLD - NOT OPTIMIZED, NOT USE!!
         if log_type.lower() == 'info':
             return PATH + '\\info.png'
         elif log_type.lower() == 'warning':
