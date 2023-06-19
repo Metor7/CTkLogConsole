@@ -47,8 +47,8 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 # To fix
 
-* [X] **OPTIMIZED IN 1.2 ver.** Optimize the log() function for improved performance and faster script execution.
-      It is likely that the poor optimization of the main log() function is caused by generating a separate variable for each log container to store the icon depending on         the log type. Fixing this issue should reduce the time taken to create each log container. By optimizing this aspect, the overall performance of the console can be          improved. ASPECT ONLY OCCURS WHEN MULTIPLE LOG CONTAINERS ARE CREATED! 
+* [X] Optimize the log() function for improved performance and faster script execution.
+      It is likely that the poor optimization of the main log() function is caused by generating a separate variable for each log container to store the icon depending on         the log type. Fixing this issue should reduce the time taken to create each log container. By optimizing this aspect, the overall performance of the console can be          improved. - ASPECT ONLY OCCURS WHEN MULTIPLE LOG CONTAINERS ARE CREATED! 
 * [ ] Fix the bug where the log container does not change its color when the appearance mode is changed. (A temporary workaround is to add an additional log entry to trigger the color update.)
 
 ***If you know how to repair this bugs contact me.***
