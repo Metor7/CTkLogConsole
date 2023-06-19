@@ -5,6 +5,7 @@ customtkinter.set_appearance_mode("dark")
 customtkinter.set_default_color_theme("dark-blue")
 
 root = customtkinter.CTk()
+root.title('CTkLogConsole - Easy Example')
 
 console_frame = customtkinter.CTkFrame(root, width=520, height=320)
 console_frame.pack(padx=10, pady=10)
